@@ -1,73 +1,49 @@
+# Name - subhrajeet dash , Roll - 2401350018
+
 # Grocery Store Inventory System 
 Introduction
-
-This is my Python project for the Inventory System of a Grocery Store.
-The program can keep records of items like their ID, name, quantity, and price.
-It uses arrays to store the data and supports basic operations like adding, deleting, and searching items.
-
-The project also shows how price and quantity can be stored in row-major and column-major order.
-For rarely restocked products, it uses a sparse representation to save space.
+This is my **Java project** for the Inventory System of a Grocery Store.  
+The program keeps records of items including their **ID, name, quantity, and price**.  
+It uses an **ArrayList** to store the data and supports basic operations like **adding, deleting, searching, and displaying items**.
 
 # Features
 
-Add a new item to the inventory
+- Add a new item to the inventory  
+- Delete an item using its ID  
+- Search item by **ID or name**  
+- Display all items in a **tabular format**  
+- Simple, beginner-friendly **menu-driven interface**  
+- Shows **time and space complexity** of each operation
 
-Delete an item using its ID
+# Sample output
+--- Inventory System Menu ---
+1. Add Item
+2. Remove Item
+3. Search Item
+4. Display All Items
+0. Exit
+Enter your choice: 1
+Enter ID: 2
+Enter Name: Bananas
+Enter Quantity: 5
+Enter Price: 1.2
+Item added successfully!
 
-Search item by ID or name
+Enter your choice: 4
 
-Manage price and quantity in row-major / column-major form
+ID    Name            Quantity   Price     
+----------------------------------------
+2     Bananas         5          1.20      
 
-Sparse representation for low stock items
+Enter your choice: 3
+Enter ID or Name to search: 2
+Found -> ID: 2, Name: Bananas, Quantity: 5, Price: 1.2
 
-Shows time and space complexity of all functions
-
-# Files
-
-Invantory.py → main Python file with the complete code
-
-README.md → this file
-
-How to Run
-
-Install Python on your system.
-
-Save the code in a file called Invantory.py.
-
-Open terminal / command prompt and run:
-
-python Invantory.py
-
-# Sample Output
-Found Item: 2 Bananas 1 1.2
-Row-Major Ordering: [1, 10, 2.5, 2, 1, 1.2]
-Column-Major Ordering: [1, 2, 10, 1, 2.5, 1.2]
-Sparse Storage: {2: ('Bananas', 1, 1.2)}
-
-Complexity Analysis:
-insertItem: Time=O(1) amortized, Space=O(1)
-deleteItem: Time=O(n), Space=O(1)
-searchItem: Time=O(n), Space=O(1)
-addItemRecord: Time=O(1), Space=O(1)
-removeItemRecord: Time=O(n), Space=O(1)
-searchByItem: Time=O(n), Space=O(1)
-managePriceQuantity: Time=O(n*m), Space=O(n*m)
-optimizeSparseStorage: Time=O(n), Space=O(k)
-
-# Complexity Table
-Function	Time	Space
-insertItem	O(1)	O(1)
-deleteItem	O(n)	O(1)
-searchItem	O(n)	O(1)
-addItemRecord	O(1)	O(1)
-removeItemRecord	O(n)	O(1)
-searchByItem	O(n)	O(1)
-managePriceQuantity	O(n*m)	O(n*m)
-optimizeSparseStorage	O(n)	O(k)
-
-# Conclusion
-
-This assignment helped me understand how arrays can be used for real-life inventory management.
-I also learned about row-major and column-major ordering, sparse representation, and how to calculate time and space complexity for each operation.
+# Complexity Analysis
+Function	Time Complexity	Space Complexity
+Add Item	O(1)	O(1)
+Remove Item	O(n)	O(1)
+Search Item	O(n)	O(1)
+Display All Items	O(n)	O(1)
 
 
