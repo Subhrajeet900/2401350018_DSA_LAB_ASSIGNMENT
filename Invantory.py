@@ -1,4 +1,5 @@
 # 2401350018 subhrajeet dash
+
 class InventoryItem:
     def __init__(self, item_id, item_name, quantity, price):
         self.ItemID = item_id
