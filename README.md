@@ -1,4 +1,4 @@
-# Grocery Store Inventory System (Python)
+# Grocery Store Inventory System 
 Introduction
 
 This is my Python project for the Inventory System of a Grocery Store.
